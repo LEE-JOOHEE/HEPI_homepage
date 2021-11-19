@@ -263,19 +263,40 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 @media all and (max-width:900px){
   #header_pc {display:none;}
 	#header_m {display:block;}
-  .catchphrase{padding-top: 160px; font-size: 70px;}
+  .catchphrase{padding-top: 370px; font-size: 50px;}
   .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
   .virtual_power_plant img{width: 100%;}
+
+  .virtual_power_plant h1,
+  .eco_power_plant h1,
+  .partner h1{
+    font-size: 24px; font-weight: 600; margin-top: -10px;
+  }
+  .virtual_power_plant p,
+  .eco_power_plant p,
+  .partner p{
+    margin: 15px 0 30px 0;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
   .eco_power_plant{margin: 0 20px; position: absolute; top: 100px;}
   .eco_power_plant img{width: 100%;}
+
   .professional{padding: 0 20px;}
-  .professional .catchphrase{padding: 80px 80px;}
+  .professional .catchphrase{padding: 30px;}
+  .professional .catchphrase h1{font-size: 22px;}
+  .professional .catchphrase p{font-size: 16px;}
+
   .partner{padding: 100px 20px 0 20px;}
   .partner img{width: 80%;}
   .floating-application{bottom: 110px;}
 }
 @media all and (max-width:740px){
   .partner img{width: 95%;}
+
+  
+
 }
 @media all and (max-width:608px){
   #footer{bottom:0px; height: 120px;}
