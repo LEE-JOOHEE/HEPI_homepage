@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>HEPI 공식홈페이지</title>
+  <meta name="author" content="Matthew Howell" />
+  <meta name="description" content="fullPage continuous scrolling demo." />
+  <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="shortcut icon" href="/assets/img/hepi_favicon_icon.ico">
+  <link rel="stylesheet" href="/assets/css/font/font.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/css/fullpage/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/fullpage/examples.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/homepage.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/homepage2.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/board.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--[if IE]>
+      <script type="text/javascript">
+            var console = { log: function() {} };
+      </script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/fullpage/fullpage.js"></script>
+
+  <script type="text/javascript">
+      //using document ready...
+      $(document).ready(function(){
+
+          //initialising fullpage.js in the jQuery way
+          $('#fullpage').fullpage({
+              sectionsColor: ['#fff', '#fff', '#f3f3f3', '#fff'],
+              navigation: true,
+              slidesNavigation: true,
+          });
+
+          // calling fullpage.js methods using jQuery
+          $('#moveSectionUp').click(function(e){
+              e.preventDefault();
+              $.fn.fullpage.moveSectionUp();
+          });
+
+          $('#moveSectionDown').click(function(e){
+              e.preventDefault();
+              $.fn.fullpage.moveSectionDown();
+          });
+          $('#moveSectionTop').click(function(e){
+              e.preventDefault();
+              $.fn.fullpage.moveTo(1,1);
+          });
+      });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header id="header">
+      <div id="header_pc">
+        <div id="header02" class="">
+          <h1><a href="#"></a></h1>
+          <nav>
+            <ul id="gnb">
+              <li class="s01">
+                <a href="#">가상발전소</a>
+                <div class="sub">
+                  <p class="title">
+                    <!-- <strong>회사소개</strong>
+                    <span>요금정산, 차량인식, 주차정산 및 유도, 영상 보안까지 주차관련 통합 솔루션</span> -->
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="#">가상 발전소</a>
+                    </li>
+                    <li><a href="#">HEPI 가상 발전소</a></li>
+                    <li><a href="#">클라우드 플랫폼</a></li>
+                    <li>
+                      <a href="#">운영비용 절감</a>
+                      <ul>
+                        <li><a href="#">플랫폼 특징</a></li>
+                        <li><a href="#">주요기능</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s02">
+                <a href="#">프로그램</a>
+                <div class="sub">
+                  <p class="title"></p>
+                  <ul>
+                    <li><a href="#">자원통합전문가</a></li>
+                    <li><a href="#">수요반응자원</a></li>
+                    <li><a href="#">공급인증서</a></li>
+                    <li>
+                      <a href="#">참여파트너<br>지원도구</a>
+                      <ul>
+                        <li><a href="#">전화문의</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s03">
+                <a href="#">시장정보</a>
+                <div class="sub">
+                  <p class="title"></p>
+                  <ul>
+                    <li>
+                      <a href="#">수요반응시장</a>
+                      <ul>
+                        <li><a href="#">수요반응시장이란?</a></li>
+                        <li><a href="#">거래시장의 참여방법</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">REC거래시장</a>
+                      <ul>
+                        <li><a href="#">REC거래시장이란?</a></li>
+                        <li><a href="#">공급인증서(REC)란?</a></li>
+                        <li><a href="#">REC 거래방법 및 절차</a></li>
+                        <li><a href="#">REC 발급신청 방법</a></li>
+                        <li><a href="#">REC 거래방법 및 절차</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">프로슈머시장</a>
+                      <ul>
+                        <li><a href="#">에너지 프로슈머</a></li>
+                        <li><a href="#">수익모델</a></li>
+                        <li><a href="#">전력구입</a></li>
+                        <li><a href="#">잉여전력 판매</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">참여파트너<br>지원도구</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s04">
+                <a href="#">회사소개</a>
+                <div class="sub">
+                  <p class="title"></p>
+                  <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li>
+                      <a href="#">연혁</a>
+                      <ul>
+                        <li><a href="#">주요활동</a></li>
+                        <li><a href="#">주요인력</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s06">
+                <a href="#" class="tt"><span>DR서비스</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    <!-- header_pc end -->
+
+      <!-- header_m -->
+      <div id="header_m">
+        <div class="header_top">
+          <a href="#" class="btn_open"><img src="/assets/img/icon/btn_menu03.png" alt="mobile_menu_open"/></a>
+          <h1 class="logo"><a href="#"><img src="/assets/img/hepi_logo_only.png" alt="HEPI"/></a></h1>
+          <a href="tel:042-861-2400" class="btn_tel"><img src="/assets/img/icon/btn_tel.png" alt="call"/></a>
+        </div>
+
+        <!-- gnb_m -->
+        <div id="gnb_m">
+          <div class="gnb_top">
+            <a href="#" class="btn_close"><img src="/assets/img/icon/btn_close.png" alt="mobile_menu_close"/></a>
+            <p class="logo"><a href="#"><img src="/assets/img/hepi_logo_only.png" alt="HEPI"/></a></p>
+          </div>
+          <div class="gnb_list">
+            <ul>
+              <li class="s01">
+                <a href="#">가상발전소</a>
+                <div class="sub">								
+                  <ul>
+                    <li><a href="#">가상발전소</a></li>
+                    <li><a href="#">HEPI가상발전소</a></li>
+                    <li><a href="#">클라우드 플랫폼</a></li>
+                    <li>
+                      <a href="#">운영비용 절감</a>
+                      <ul>
+                        <li><a href="#">플랫폼 특징</a></li>
+                        <li><a href="#">주요기능</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s02">
+                <a href="#">프로그램</a>
+                <div class="sub">								
+                  <ul>
+                    <li><a href="#">자원통합전문가</a></li>
+                    <li><a href="#">수요반응자원</a></li>
+                    <li><a href="#">공급인증서</a></li>
+                    <li>
+                      <a href="#">참여파트너 지원도구</a>
+                      <ul>
+                        <li><a href="#">전화문의</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s03">
+                <a href="#">시장정보</a>
+                <div class="sub">								
+                  <ul>
+                    <li>
+                      <a href="#">수요반응시장</a>
+                      <ul>
+                        <li><a href="#">수요반응시장이란?</a></li>
+                        <li><a href="#">거래시장의 참여방법</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">REC거래시장</a>
+                      <ul>
+                        <li><a href="#">REC거래시장이란?</a></li>
+                        <li><a href="#">공급인증서(REC)란?</a></li>
+                        <li><a href="#">REC 거래방법 및 절차</a></li>
+                        <li><a href="#">REC 발급신청 방법</a></li>
+                        <li><a href="#">REC 거래방법 및 절차</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">프로슈머시장</a>
+                      <ul>
+                        <li><a href="#">에너지 프로슈머</a></li>
+                        <li><a href="#">수익모델</a></li>
+                        <li><a href="#">전력구입</a></li>
+                        <li><a href="#">잉여전력 판매</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">참여파트너 지원도구</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="s04">
+                <a href="#">회사소개</a>
+                <div class="sub">								
+                  <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li>
+                      <a href="#">연혁</a>
+                      <ul>
+                        <li><a href="#">주요활동</a></li>
+                        <li><a href="#">주요인력</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>    <!-- header_m end -->
+    </header>   <!-- header end -->
+
+    <div id="footer">
+      <address>
+        <div class="inwrap">
+          <!-- <b class="logo"><img src="/assets/img/hepi_logo_basic.png" alt="HEPI_logo" width="120px"/></b> -->
+          <p class="info01">
+            <span>HEPi 한국전력정보(주)</span><span>대표이사 장병훈</span>
+            <span>사업자등록번호 : 842-81-01038</span><span>대표번호 042-861-2400</span><br/>
+            <span>대전광역시 유성구 대덕대로 593 대덕테크비즈센터 205호</span>
+            <span>Contact happy@hepi.co.kr</span>
+          </p>
+          <p class="copyright">Copyright 2021. HEPI Corp. all rights reserved.
+          </p>
+        </div>
+      </address>
+    </div>    <!-- footer end -->
+
+  <!-- <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+  </ul>
+
+  <div id="actions">
+    <a id="moveSectionUp" href="#">moveSectionUp</a>
+    <a id="moveSectionDown" href="#">moveSectionDown</a>
+  </div> -->
+
+    <div id="fullpage">
+      <div class="section">
+          <div class="intro">
+            <div class="catchphrase">
+              <p>With HEPI Virtual Power Plant</p> Save the Penguin
+            </div>
+          </div>
+      </div>
+      <div class="section">
+        <div class="virtual_power_plant">
+          <h1>가상발전소</h1>
+          <p>다양한 소규모 분산전원을 클라우드 기반의 소프트웨어 플랫폼으로 모아<br>
+            마치 하나의 대형 발전소처럼 통합 관리하는 시스템입니다.</p>
+          <img src="/assets/img/main_vpp_info.png" alt="vpp_info" width="750">
+        </div>
+      </div>
+      <div class="section">
+        <div class="eco_power_plant">
+          <h1>친환경발전소 ㆍ HEPI 가상발전소</h1>
+          <p>
+            HEPI 가상발전소는 신재생에너지 전력을 하나로<br>
+            공장마다 집집마다 아낀 전력(DR 전력)을 하나로 모아 클라우드 가상발전소로 통합관리합니다.<br>
+            발전량이 일정치 않은 분산 신재생에너지 자원과 DR 자원의 단점을 보완해 주는 친환경 가상 발전소입니다.
+          </p>
+          <img src="/assets/img/pc_tablet_mobile.png" alt="pc_tablet_mobile" width="800">
+        </div>
+      </div>
+      <div class="section">
+        <div class="professional">
+          <div class="catchphrase">
+            <h1>티끌 모아 태산 ‘자원 통합 전문가’와 함께</h1>
+            <p>
+              자원 통합 전문가와 함께 소규모 분산전원을 HEPI 가상발전소로 모아<br>
+              대량 공급하는 한국전력정보㈜는 누구나 자유롭게<br>
+              에너지를 사고파는 새로운 미래를 만들어 가고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="partner">
+          <div class="catchphrase">
+            <h1>자원 통합 전문가<br>파트너 참여 프로그램</h1>
+            <p>
+              누구나 간편하게 프로그램에 가입하고 '자원 통합 전문가’로서 활동할 수 있습니다.<br>
+              DR자원, 태앵광 발전자원 등을 효율적으로 발굴하는 측정도구, 진단도구, 컨설팅방법론 등<br>
+              많은 혜택을 지원해 드립니다.
+            </p>
+          </div>
+          <img src="/assets/img/main_05_partner_new.png" alt="partner" width="670">
+        </div>
+      </div>
+    </div>    <!-- fullpage main end -->
+
+
+    <div class="floating-application" id="scrollBtn" style="display: block;">
+      <a id="moveSectionTop" class="btn-top">TOP</a> 
+      <a id="moveSectionUp" class="btn-up" href="#"></a>
+      <a id="moveSectionDown" class="btn-up btn-down" href="#"></a>
+    </div>
+  </div>    <!-- wrap end -->
+
+
+    <!-- <div class="section">
+        <div class="slide"><h1>Section 2.1</h1></div>
+        <div class="slide"><h1>Section 2.2</h1></div>
+        <div class="slide"><h1>Section 2.3</h1></div>
+    </div>
+    <div class="section">
+        <h1>Section 3</h1>
+    </div>
+    <div class="section">
+        <h1>Section 4</h1>
+    </div>
+  </div> -->
+
+  <script type="text/javascript" src="/assets/js/gnb.js"></script>
+
+</body>
+</html>
