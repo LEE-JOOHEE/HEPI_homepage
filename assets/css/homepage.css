@@ -141,7 +141,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 .professional h1{
   text-shadow: 4px 4px 3px rgb(0 0 0 / 40%);
   padding: 0;
-  font-size: 33px;
+  font-size: 31px;
   margin-bottom: 30px;
   color: #fff;
 }
@@ -271,20 +271,24 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
   .eco_power_plant img{width: 90%;}
 
   .professional{padding: 0 60px;}
+  .professional .catchphrase{padding: 60px;}
+  .professional .catchphrase p{font-size: 18px;}
 
   .partner{padding: 100px 20px 0 20px;}
-  .partner img{width: 90%;}
+  .partner img{width: 85%;}
   .floating-application{bottom: 110px;}
 }
 @media all and (max-width:740px){
   .professional{padding: 0 60px;}
-  .professional .catchphrase{padding: 80px 50px;}
+  .professional .catchphrase{padding: 50px;}
+  .professional .catchphrase h1{font-size: 26px;}
+  .professional .catchphrase p{font-size: 16px;}
 }
 @media all and (max-width:608px){
   #footer{bottom:0px; height: 120px;}
   .floating-application{bottom: 130px;}
 
-  /* .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
+  .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
   .virtual_power_plant img{width: 100%;}
   .virtual_power_plant h1,
   .eco_power_plant h1,
@@ -297,15 +301,14 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
     margin: 15px 0 30px 0;
     font-size: 15px;
     line-height: 25px;
-  } */
+  }
 
-  /* .eco_power_plant{margin: 0 20px; position: absolute; top: 100px;}
-  .eco_power_plant img{width: 100%;} */
+  .eco_power_plant img{width: 100%;}
 
-  /* .professional{padding: 0 20px;}
-  .professional .catchphrase{padding: 30px;}
+  .professional{padding: 0 50px;}
+  .professional .catchphrase{padding: 40px;}
   .professional .catchphrase h1{font-size: 22px;}
-  .professional .catchphrase p{font-size: 16px;} */
+  .professional .catchphrase p{font-size: 16px;}
 
 
 }
