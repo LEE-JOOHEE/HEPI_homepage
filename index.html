@@ -20,41 +20,29 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/board.css" />
   <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <!--[if IE]>
-      <script type="text/javascript">
-            var console = { log: function() {} };
-      </script>
-  <![endif]-->
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
   <script type="text/javascript" src="/assets/js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="/assets/js/fullpage/fullpage.js"></script>
 
   <script type="text/javascript">
-      //using document ready...
-      $(document).ready(function(){
-
-          //initialising fullpage.js in the jQuery way
-          $('#fullpage').fullpage({
-              sectionsColor: ['#fff', '#fff', '#f3f3f3', '#fff'],
-              navigation: true,
-              slidesNavigation: true,
-          });
-
-          // calling fullpage.js methods using jQuery
-          $('#moveSectionUp').click(function(e){
-              e.preventDefault();
-              $.fn.fullpage.moveSectionUp();
-          });
-
-          $('#moveSectionDown').click(function(e){
-              e.preventDefault();
-              $.fn.fullpage.moveSectionDown();
-          });
-          $('#moveSectionTop').click(function(e){
-              e.preventDefault();
-              $.fn.fullpage.moveTo(1,1);
-          });
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+          sectionsColor: ['#fff', '#fff', '#f3f3f3', '#fff'],
+          navigation: true,
+          slidesNavigation: true,
       });
+      $('#moveSectionUp').click(function(e){
+          e.preventDefault();
+          $.fn.fullpage.moveSectionUp();
+      });
+      $('#moveSectionDown').click(function(e){
+          e.preventDefault();
+          $.fn.fullpage.moveSectionDown();
+      });
+      $('#moveSectionTop').click(function(e){
+          e.preventDefault();
+          $.fn.fullpage.moveTo(1,1);
+      });
+    });
   </script>
 </head>
 <body>
@@ -68,14 +56,9 @@
               <li class="s01">
                 <a href="#">가상발전소</a>
                 <div class="sub">
-                  <p class="title">
-                    <!-- <strong>회사소개</strong>
-                    <span>요금정산, 차량인식, 주차정산 및 유도, 영상 보안까지 주차관련 통합 솔루션</span> -->
-                  </p>
+                  <p class="title"></p>
                   <ul>
-                    <li>
-                      <a href="#">가상 발전소</a>
-                    </li>
+                    <li><a href="#">가상 발전소</a></li>
                     <li><a href="#">HEPI 가상 발전소</a></li>
                     <li><a href="#">클라우드 플랫폼</a></li>
                     <li>
@@ -275,7 +258,6 @@
     <div id="footer">
       <address>
         <div class="inwrap">
-          <!-- <b class="logo"><img src="/assets/img/hepi_logo_basic.png" alt="HEPI_logo" width="120px"/></b> -->
           <p class="info01">
             <span>HEPi 한국전력정보(주)</span><span>대표이사 장병훈</span>
             <span>사업자등록번호 : 842-81-01038</span><span>대표번호 042-861-2400</span><br/>
@@ -287,17 +269,6 @@
         </div>
       </address>
     </div>    <!-- footer end -->
-
-  <!-- <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-  </ul>
-
-  <div id="actions">
-    <a id="moveSectionUp" href="#">moveSectionUp</a>
-    <a id="moveSectionDown" href="#">moveSectionDown</a>
-  </div> -->
 
     <div id="fullpage">
       <div class="section">
@@ -353,7 +324,7 @@
       </div>
     </div>    <!-- fullpage main end -->
 
-
+    <!-- top, up, down btn -->
     <div class="floating-application" id="scrollBtn" style="display: block;">
       <a id="moveSectionTop" class="btn-top">TOP</a> 
       <a id="moveSectionUp" class="btn-up" href="#"></a>
@@ -361,21 +332,6 @@
     </div>
   </div>    <!-- wrap end -->
 
-
-    <!-- <div class="section">
-        <div class="slide"><h1>Section 2.1</h1></div>
-        <div class="slide"><h1>Section 2.2</h1></div>
-        <div class="slide"><h1>Section 2.3</h1></div>
-    </div>
-    <div class="section">
-        <h1>Section 3</h1>
-    </div>
-    <div class="section">
-        <h1>Section 4</h1>
-    </div>
-  </div> -->
-
   <script type="text/javascript" src="/assets/js/gnb.js"></script>
-
 </body>
 </html>
