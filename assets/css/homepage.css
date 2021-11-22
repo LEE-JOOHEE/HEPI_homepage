@@ -316,6 +316,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
   #footer{bottom:0px; height: 140px;}
   .floating-application{bottom: 150px;}
   .catchphrase{padding-top: 200px; font-size: 50px;}
+  .professional .catchphrase{padding: 30px;}
   .partner{padding-top: 90px;}
   .partner .catchphrase h1{font-size: 20px;}
   .partner p{margin-bottom: 10px;}
