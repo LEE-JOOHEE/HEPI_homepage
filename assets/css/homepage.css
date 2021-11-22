@@ -83,7 +83,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 
 /* penguin */
 .intro {
-    height: 937px;
+    height: inherit;
     margin-top: -60px;
     background-image: url(/assets/img/main_01_visual_2000x996.png);
     background-size: cover;
@@ -91,7 +91,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
   }
 .catchphrase {
   text-shadow: 0px 1px 3px rgb(0 0 0 / 46%);
-  padding: 260px 0 0 0;
+  padding: 230px 0 0 0;
   font-size: 81px;
   color: #fff;
 }
@@ -263,10 +263,29 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 @media all and (max-width:900px){
   #header_pc {display:none;}
 	#header_m {display:block;}
-  .catchphrase{padding-top: 200px; font-size: 50px;}
+  .catchphrase{padding-top: 200px; font-size: 70px;}
   .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
-  .virtual_power_plant img{width: 100%;}
+  .virtual_power_plant img{width: 90%;}
 
+  .eco_power_plant{margin: 0 20px; position: absolute; top: 100px;}
+  .eco_power_plant img{width: 90%;}
+
+  .professional{padding: 0 60px;}
+
+  .partner{padding: 100px 20px 0 20px;}
+  .partner img{width: 90%;}
+  .floating-application{bottom: 110px;}
+}
+@media all and (max-width:740px){
+  .professional{padding: 0 60px;}
+  .professional .catchphrase{padding: 80px 50px;}
+}
+@media all and (max-width:608px){
+  #footer{bottom:0px; height: 120px;}
+  .floating-application{bottom: 130px;}
+
+  /* .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
+  .virtual_power_plant img{width: 100%;}
   .virtual_power_plant h1,
   .eco_power_plant h1,
   .partner h1{
@@ -278,34 +297,23 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
     margin: 15px 0 30px 0;
     font-size: 15px;
     line-height: 25px;
-  }
+  } */
 
-  .eco_power_plant{margin: 0 20px; position: absolute; top: 100px;}
-  .eco_power_plant img{width: 100%;}
+  /* .eco_power_plant{margin: 0 20px; position: absolute; top: 100px;}
+  .eco_power_plant img{width: 100%;} */
 
-  .professional{padding: 0 20px;}
+  /* .professional{padding: 0 20px;}
   .professional .catchphrase{padding: 30px;}
   .professional .catchphrase h1{font-size: 22px;}
-  .professional .catchphrase p{font-size: 16px;}
+  .professional .catchphrase p{font-size: 16px;} */
 
-  .partner{padding: 100px 20px 0 20px;}
-  .partner img{width: 80%;}
-  .floating-application{bottom: 110px;}
-}
-@media all and (max-width:740px){
-  .partner img{width: 95%;}
 
-  
-
-}
-@media all and (max-width:608px){
-  #footer{bottom:0px; height: 120px;}
-  .floating-application{bottom: 130px;}
 }
 @media all and (max-width:532px){
   #footer{bottom:0px; height: 140px;}
   .floating-application{bottom: 150px;}
-  .partner{padding-top: 80px;}
+  .catchphrase{padding-top: 200px; font-size: 50px;}
+  .partner{padding-top: 90px;}
   .partner .catchphrase h1{font-size: 20px;}
   .partner p{margin-bottom: 10px;}
 }
