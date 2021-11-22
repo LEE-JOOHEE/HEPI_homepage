@@ -263,7 +263,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 @media all and (max-width:900px){
   #header_pc {display:none;}
 	#header_m {display:block;}
-  .catchphrase{padding-top: 370px; font-size: 50px;}
+  .catchphrase{padding-top: 200px; font-size: 50px;}
   .virtual_power_plant{margin: 0 20px; position: absolute; top: 100px;}
   .virtual_power_plant img{width: 100%;}
 
@@ -305,4 +305,7 @@ address .info02, address .copyright  {padding-left:6px; padding-right:6px;
 @media all and (max-width:532px){
   #footer{bottom:0px; height: 140px;}
   .floating-application{bottom: 150px;}
+  .partner{padding-top: 80px;}
+  .partner .catchphrase h1{font-size: 20px;}
+  .partner p{margin-bottom: 10px;}
 }
